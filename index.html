@@ -3,41 +3,83 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Will You Be My Girlfriend?</title>
+  <title>Special Question</title>
   <style>
     body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
       font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #f06, #f79);
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #ff6961;
       color: white;
+      padding: 20px;
       text-align: center;
     }
+
     h1 {
       font-size: 3em;
+      margin: 0;
     }
-    button {
-      font-size: 1.5em;
-      padding: 10px 20px;
-      background: white;
-      color: #f06;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      padding: 20px;
     }
-    button:hover {
-      background: #f79;
+
+    .gallery img {
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.1);
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    footer {
+      background-color: #333;
       color: white;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 1em;
     }
   </style>
 </head>
 <body>
-  <div>
+  <header>
     <h1>Will You Be My Girlfriend? 💖</h1>
-    <button onclick="alert('I’m so happy!')">Yes!</button>
+  </header>
+
+  <div class="gallery">
+    <img src="64110BB1-82DB-422A-98A3-5B268CF6DAD7.jpeg" alt="Image 1">
+    <img src="IMG_1118.jpeg" alt="Image 2">
+    <img src="IMG_4313.jpeg" alt="Image 3">
+    <img src="IMG_4298.jpeg" alt="Image 4">
+    <img src="CC9BD14A-2862-4BCF-9776-DD8E7860A454.jpeg" alt="Image 5">
+    <img src="F8B99D08-C4DC-4505-BD3F-922825763724.jpeg" alt="Image 6">
+    <img src="0CF35A5F-B544-4F18-8D3C-DA33D896A723.JPEG" alt="Image 7">
+    <img src="IMG_3660.jpeg" alt="Image 8">
   </div>
+
+  <footer>
+    <p>Made with ❤️ by Alan</p>
+  </footer>
 </body>
 </html>
