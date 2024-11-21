@@ -3,24 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Special Question</title>
+  <title>Will You Be My Girlfriend?</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f4f4f4;
-    }
-
-    header {
-      background-color: #ff6961;
+      background: linear-gradient(135deg, #ffc1cc, #ff69b4);
       color: white;
-      padding: 20px;
       text-align: center;
     }
 
+    header {
+      padding: 30px;
+      background-color: #ff69b4;
+      color: white;
+      font-size: 2.5em;
+      font-weight: bold;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    }
+
     h1 {
-      font-size: 3em;
       margin: 0;
     }
 
@@ -46,18 +49,33 @@
       box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
     }
 
+    .highlighted {
+      width: 100%;
+      max-width: 600px;
+      height: auto;
+      margin: 20px auto;
+      border-radius: 15px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+      animation: glow 3s infinite alternate;
+    }
+
+    @keyframes glow {
+      from {
+        box-shadow: 0 8px 16px rgba(255, 182, 193, 0.5);
+      }
+      to {
+        box-shadow: 0 8px 16px rgba(255, 105, 180, 1);
+      }
+    }
+
     footer {
-      background-color: #333;
+      background-color: #ff69b4;
       color: white;
       text-align: center;
-      padding: 10px;
+      padding: 15px;
       position: fixed;
       bottom: 0;
       width: 100%;
-    }
-
-    footer p {
-      margin: 0;
       font-size: 1em;
     }
   </style>
@@ -67,6 +85,10 @@
     <h1>Will You Be My Girlfriend? 💖</h1>
   </header>
 
+  <div>
+    <img src="IMG_3411.jpeg" alt="Special Image" class="highlighted">
+  </div>
+
   <div class="gallery">
     <img src="64110BB1-82DB-422A-98A3-5B268CF6DAD7.jpeg" alt="Image 1">
     <img src="IMG_1118.jpeg" alt="Image 2">
@@ -74,12 +96,10 @@
     <img src="IMG_4298.jpeg" alt="Image 4">
     <img src="CC9BD14A-2862-4BCF-9776-DD8E7860A454.jpeg" alt="Image 5">
     <img src="F8B99D08-C4DC-4505-BD3F-922825763724.jpeg" alt="Image 6">
-    <img src="0CF35A5F-B544-4F18-8D3C-DA33D896A723.JPEG" alt="Image 7">
-    <img src="IMG_3660.jpeg" alt="Image 8">
   </div>
 
   <footer>
-    <p>Made with ❤️ by Alan</p>
+    <p>Made with ❤️ for you by Alan</p>
   </footer>
 </body>
 </html>
